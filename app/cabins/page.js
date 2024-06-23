@@ -2,10 +2,14 @@ import { Suspense } from 'react';
 import CabinList from '../_components/CabinList';
 import Spinner from '@/app/_components/Spinner';
 
+// opt out of the cache
+// export const revalidate = 15;
+
 export const metadata = {
   title: 'Cabins',
 };
-export default async function Page() {
+
+export default async function Cabin() {
   return (
     <div>
       <h1 className='text-4xl mb-5 text-accent-400 font-medium'>

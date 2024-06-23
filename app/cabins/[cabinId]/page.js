@@ -11,6 +11,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
+// To make Dynamic page become the static asset.
 export async function generateStaticParams() {
   const cabins = await getCabins();
 
