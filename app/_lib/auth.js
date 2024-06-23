@@ -10,6 +10,11 @@ const authConfig = {
     }),
   ],
   secret: process.env.NEXT_PUBLIC_SECRET,
+  callbacks: {
+    authorized({ auth, request }) {
+      return !!auth?.user;
+    },
+  },
 };
 
 export const {
