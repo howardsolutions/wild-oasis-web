@@ -14,6 +14,22 @@ const authConfig = {
     authorized({ auth, request }) {
       return !!auth?.user;
     },
+    async signIn({ user, account, profile }) {
+      try {
+        const existingGuest = await getGuest(user.email);
+
+        if (!existingGuest) {
+          await createGuest({
+            email: user.email,
+            fullName: user.name,
+          });
+        }
+
+        return true;
+      } catch (err) {
+        return false;
+      }
+    },
   },
   pages: {
     signIn: '/login',
