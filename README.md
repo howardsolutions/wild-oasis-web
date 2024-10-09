@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Wild Oasis Website
 
 ## Getting Started
 
@@ -20,17 +20,63 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Project Requirements
 
-To learn more about Next.js, take a look at the following resources:
+## Features Categories
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ABOUT
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<details> 
+    <summary>Open to Read</summary> 
+    * Guest should be able to learn all about the Wild Oasis Hotel <br /> 
+    * User of the app are potential guests and actual guests
+</details>
 
-## Deploy on Vercel
+### CABINS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<details> 
+    <summary>Open to Read</summary> 
+    * Guest should be able to get information about each Cabin and see booked dates <br /> 
+    * Guest should be able to FILTER cabins by their maximum guest capacity
+</details>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### RESERVATIONS
+
+<details> 
+    <summary>Open to Read</summary> 
+    * Guest should be able to RESERVE a cabin for a certain date range <br /> 
+    * RESERVATIONs are not paid online. Payments will be made at the property upon arrival. There fore, new reservations should be set to "Unconfirmed" Status (booked, but not yet checkin) <br />
+    * Guest should be able to VIEW their past, and future reservations <br /> 
+    * Guest should be able to UPDATE AND DELETE reservation <br /> 
+
+</details>
+
+
+### AUTHENTICATION
+
+<details> 
+    <summary>Open to Read</summary> 
+    * Guest need to signup, login before they can reserve a cabin and perform any operation <br/>
+    * On signup, each guest should get a profile in the DB <br/>
+
+</details>
+
+
+### PROFILE
+
+<details> 
+    <summary>Open to Read</summary> 
+    * Guest should be able to set and update basic data about their probile to make check-in at the hotel faster
+
+</details>
+
+
+## TechStack
+
+- NextJS, React
+
+- UI management: Context API
+
+- DB / API: supabase
+
+- Styling: tailwind css
