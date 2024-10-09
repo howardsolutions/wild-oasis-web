@@ -1,5 +1,7 @@
 # The Wild Oasis Website
 
+THIS is the customer-facing website where guests can learn about the hotel, browse all cabins, reserve a cabin, create and update their profile.
+
 ## Getting Started
 
 First, run the development server:
@@ -26,7 +28,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### ABOUT
 
-<details> 
+<details open> 
     <summary>Open to Read</summary> 
     * Guest should be able to learn all about the Wild Oasis Hotel <br /> 
     * User of the app are potential guests and actual guests
@@ -34,7 +36,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### CABINS
 
-<details> 
+<details open> 
     <summary>Open to Read</summary> 
     * Guest should be able to get information about each Cabin and see booked dates <br /> 
     * Guest should be able to FILTER cabins by their maximum guest capacity
@@ -42,7 +44,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### RESERVATIONS
 
-<details> 
+<details open> 
     <summary>Open to Read</summary> 
     * Guest should be able to RESERVE a cabin for a certain date range <br /> 
     * RESERVATIONs are not paid online. Payments will be made at the property upon arrival. There fore, new reservations should be set to "Unconfirmed" Status (booked, but not yet checkin) <br />
@@ -54,7 +56,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### AUTHENTICATION
 
-<details> 
+<details open> 
     <summary>Open to Read</summary> 
     * Guest need to signup, login before they can reserve a cabin and perform any operation <br/>
     * On signup, each guest should get a profile in the DB <br/>
@@ -64,7 +66,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### PROFILE
 
-<details> 
+<details open> 
     <summary>Open to Read</summary> 
     * Guest should be able to set and update basic data about their probile to make check-in at the hotel faster
 
